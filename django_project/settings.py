@@ -32,8 +32,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['192.168.1.223', 
 		 '24.216.199.101',
 		 'allthingsanalysis-dev.com',
-		 'www.allthingsanalysis.com',
-		 'all-things-analysis.serveo.net'
+		 'www.allthingsanalysis-dev.com'
 		]
 
 # Application definition
