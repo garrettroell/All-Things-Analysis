@@ -27,9 +27,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.223', 
+ALLOWED_HOSTS = [
+         'localhost',
+         '192.168.1.223', 
 		 '24.216.199.101',
 		 'allthingsanalysis-dev.com',
 		 'www.allthingsanalysis-dev.com'

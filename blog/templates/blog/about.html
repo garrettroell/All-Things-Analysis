@@ -1,4 +1,16 @@
 {% extends "blog/base.html" %}
+{% load static %}
 {% block content %}
-	<h1>About Page</h1>
+  <article class="media content-section">
+    <div class="media-body">
+      <h2 class="article-title">About us</h2>
+      <p class="article-content">
+		This blog is for statistically-based hot takes about sports, finance, and beyond. Our site is hosted locally on a raspberry pi 4.
+
+
+		<img src="{% static 'blog/raspberry_pi.jpg' %}" id="img">
+      </p>
+    </div>
+  </article>
+
 {% endblock content %}
