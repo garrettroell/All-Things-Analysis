@@ -74,6 +74,19 @@ def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
 
 
+def sports(request):
+    return render(request, 'blog/sports.html', {'title': 'Sports'})
+
+def stocks(request):
+    return render(request, 'blog/stocks.html', {'title': 'Stocks'})
+
+def podcast(request):
+    return render(request, 'blog/podcast.html', {'title': 'Podcast'})
+
+def etc(request):
+    return render(request, 'blog/etc.html', {'title': 'Etc'})
+
+
 
 
 

@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,8 +11,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<!-- <link rel="stylesheet" type="text/css" href="{% static 'static/blog/main.css' %}"> -->
 	<link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
+
+	<link rel="shortcut icon" href="{% static 'blog/favicon.ico' %}" />
 
 	{% if title %}
 		<title>All Things - {{ title }}</title>
@@ -56,7 +62,7 @@
 
 <main role="main" class="container">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-8 ">
 		{% if messages %}
 			{% for message in messages %}
 				<div class="alert alert-{{ message.tags}}">
@@ -70,12 +76,12 @@
       <div class="content-section">
         <h3>Topics</h3>
         <p class='text-light'>Sweet sweet content.
-          <ul class="list-group">
-            <li class="list-group-item bg-orange list-group-item-black">Sports</li>
-            <li class="list-group-item bg-orange list-group-item-black">Stocks</li>
-            <li class="list-group-item bg-orange list-group-item-black">Podcast</li>
-            <li class="list-group-item bg-orange list-group-item-black">etc</li>
-          </ul>
+          <div class="list-group">
+            <a href="{% url 'blog-sports' %}"class="list-group-item">Sports</a>
+            <a href="{% url 'blog-stocks' %}" class="list-group-item">Stocks</a>
+            <a href="{% url 'blog-podcast' %}" class="list-group-item">Podcast</a>
+            <a href="{% url 'blog-etc' %}" class="list-group-item">etc</a>
+          </div>
         </p>
       </div>
     </div>
@@ -88,4 +94,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
+<footer class="page-footer font-small">
+
+  <div class= "logo-spacing"></div>
+
+  <div class="d-flex">
+	<div class = "list-inline mx-auto justify-content-center">
+	   <a class="list-inline-item btn btn-social-icon btn-linkedin" 
+	   href = "https://www.linkedin.com/company/allthingsanalysis/">
+	    <span class="fa fa-linkedin"></span>
+	   </a>
+	   <a class="list-inline-item btn btn-social-icon btn-instagram" 
+	   href = "https://www.instagram.com/allthingsanalysis/">
+	    <span class="fa fa-instagram"></span>
+	   </a>
+	   <a class="list-inline-item btn btn-social-icon btn-facebook" 
+	   href = "https://www.facebook.com/Allthingsanalysis/">
+	    <span class="fa fa-facebook"></span>
+	   </a>
+	   <a class="list-inline-item btn btn-social-icon btn-paypal" 
+	   href = "https://www.paypal.com">
+	    <span class="fa fa-paypal"></span>
+	   </a>
+	   <a class="list-inline-item btn btn-social-icon btn-google" 
+	   href = "https://www.google.com">
+	    <span class="fa fa-google"></span>
+	   </a>
+	</div>
+  </div>
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a class="footer-link" href="{% url 'blog-home' %}"> Allthingsanalysis</a>
+  </div>
+</footer>
+
 </html>
