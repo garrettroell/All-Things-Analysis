@@ -29,7 +29,7 @@
 
 	<header class="site-header">
 	  <nav class="navbar navbar-expand-md navbar-dark bg-purple fixed-top">
-	    <div class="container">
+	    <div class="container-fluid">
 	      <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">
 	      	<strong>
 	      		All Things Analysis
@@ -62,6 +62,7 @@
 
 <main role="main" class="container">
   <div class="row">
+
     <div class="col-md-8 ">
 		{% if messages %}
 			{% for message in messages %}
@@ -72,18 +73,27 @@
 		{% endif %}
      {% block content %}{% endblock %}
     </div>
+
     <div class="col-md-4">
       <div class="content-section">
         <h3>Topics</h3>
-        <p class='text-light'>Sweet sweet content.
-          <div class="list-group">
-            <a href="{% url 'blog-sports' %}"class="list-group-item">Sports</a>
-            <a href="{% url 'blog-stocks' %}" class="list-group-item">Stocks</a>
-            <a href="{% url 'blog-podcast' %}" class="list-group-item">Podcast</a>
-            <a href="{% url 'blog-etc' %}" class="list-group-item">etc</a>
-          </div>
-        </p>
+        <p class='text-light'>Sweet sweet content.</p>
+	    <div class="list-group">
+	      <a href="{% url 'blog-sports' %}"class="list-group-item">Sports</a>
+	      <a href="{% url 'blog-stocks' %}" class="list-group-item">Stocks</a>
+	      <a href="{% url 'blog-podcast' %}" class="list-group-item">Podcast</a>
+	      <a href="{% url 'blog-etc' %}" class="list-group-item">etc</a>
+	    </div>
       </div>
+	  <div class="content-section">
+	    <h3 class = justify-content-center>Our Contributors</h3>
+	    <p class='text-light justify-content-center'>The Team</p>
+	    <div class="list-group">
+	      <a href="/user/Garrett"class="list-group-item ">Garrett</a>
+	      <a href="/user/carsonlars23@gmail.com" class="list-group-item">Carsonlars23@gmail.com</a>
+	      <a href="/user/deploy" class="list-group-item">deploy</a>
+	    </div>
+	  </div>
     </div>
   </div>
 </main>
