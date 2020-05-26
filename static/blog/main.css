@@ -1,8 +1,8 @@
-body {
+/*body {
   background: #6B4A9C;
   color: #ffffff;
   margin-top: 5rem;
-  font-family: helvetica;
+  font-family: Helvetica Neue;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -113,10 +113,6 @@ footer {
   text-decoration: none;
 }
 
-.logo-spacing{
-  height: 30px;
-}
-
 .footer-link{
   color: #888888;
 }
@@ -127,7 +123,8 @@ a.footer-link:hover {
 }
 
 .list-group-item{
-  background-color: #222222;
+  background-color: #444444;
+  border-color: #444444;
   color: white;
 }
 
@@ -141,3 +138,10 @@ img{
   width: 90%;
   height: auto;
 }
+
+.banner{
+  padding-bottom: 30px;
+}
+
+
+*/

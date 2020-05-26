@@ -14,10 +14,8 @@
 	<!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- <link rel="stylesheet" type="text/css" href="{% static 'static/blog/main.css' %}"> -->
 	<link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
-
-	<link rel="shortcut icon" href="{% static 'blog/favicon.ico' %}" />
+	<link rel="shortcut icon" href="{% static "blog/favicon.ico" %}" />
 
 	{% if title %}
 		<title>All Things - {{ title }}</title>
@@ -26,15 +24,10 @@
 	{% endif %}
 </head>
 <body>
-
-	<header class="site-header">
+	<header>
 	  <nav class="navbar navbar-expand-md navbar-dark bg-purple fixed-top">
 	    <div class="container-fluid">
-	      <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">
-	      	<strong>
-	      		All Things Analysis
-	      	</strong>
-	      </a>
+	      <a class="navbar-brand mr-4" href="{% url 'blog-home' %}"><strong>All Things Analysis</strong></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	      </button>
@@ -42,7 +35,6 @@
 	        <div class="navbar-nav mr-auto">
 	          <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
 	          <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
-
 	        </div>
 	        <!-- Navbar Right Side -->
 	        <div class="navbar-nav">
@@ -59,6 +51,13 @@
 	    </div>
 	  </nav>
 	</header>
+
+
+<div class="container-fluid banner">
+  <div class="row">
+    <img class='img-fluid w-100' src="{% static 'blog/rpi_title_2.jpg' %}" alt="" />
+  </div>
+</div>
 
 <main role="main" class="container">
   <div class="row">
