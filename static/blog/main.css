@@ -1,5 +1,5 @@
-/*body {
-  background: #6B4A9C;
+body {
+  background: #7839A8;
   color: #ffffff;
   margin-top: 5rem;
   font-family: Helvetica Neue;
@@ -94,7 +94,7 @@ a.article-title:hover {
 }
 
 footer {
-  background: #ffab62;
+  background: #ffab66;
   width: 100%;
   height: 130px;
   margin-top: auto;
@@ -143,5 +143,6 @@ img{
   padding-bottom: 30px;
 }
 
-
-*/
+.logo-spacing{
+  padding-top: 30px;
+}

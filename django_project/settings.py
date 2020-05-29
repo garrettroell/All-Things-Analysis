@@ -27,15 +27,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config['DEBUG']
-#DEBUG = False
+#DEBUG = config['DEBUG']
+DEBUG = True
 
 ALLOWED_HOSTS = [
          'localhost',
          '192.168.1.223', 
-		 '24.216.199.101',
-		 'allthingsanalysis-dev.com',
-		 'www.allthingsanalysis-dev.com'
+	 '24.216.199.101',
+	 'allthingsanalysis-dev.com',
+	 'www.allthingsanalysis-dev.com'
 		]
 
 # Application definition
@@ -52,7 +52,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'podcast',
 ]
 
 MIDDLEWARE = [
