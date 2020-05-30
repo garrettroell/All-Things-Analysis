@@ -1,0 +1,26 @@
+{% extends "blog/base.html" %}
+{% block content %}
+	<div class="content-section">
+
+		<h1>{{ question.question_text }}</h1>
+
+		{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+		<form action="{% url 'polls-vote' question.id %}" method="post">
+		{% csrf_token %}
+
+		<div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+		{% for choice in question.choice_set.all %}			
+			<label class="btn btn-outline-light btn-block" for="choice{{ forloop.counter }}">
+    			<input type="radio" name="choice" autocomplete="off" id="choice{{ forloop.counter }}" 
+    				value="{{ choice.id }}"> 
+    				{{ choice.choice_text }}
+  			</label>
+		{% endfor %}
+		</div>
+		<div>
+			<button class="btn btn-outline-info mt-4" type="submit">Vote</button>
+		</div>
+		</form>
+	</div>	
+{% endblock content %} 

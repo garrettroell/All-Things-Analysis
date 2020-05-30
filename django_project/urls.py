@@ -35,7 +35,7 @@ urlpatterns = [
         auth_views.PasswordResetView.as_view(template_name='users/password_reset_done.html'),
         name='password_reset_done'),
     path('', include('blog.urls')),
-    path('podcast/', include('podcast.urls'))
+    path('polls/', include('polls.urls'))
 ]
 
 if settings.DEBUG:

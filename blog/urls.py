@@ -21,3 +21,4 @@ urlpatterns = [
     #path('podcast/', views.podcast, name='blog-podcast'),
     path('etc/', views.etc, name='blog-etc'),
 ]
+ 
