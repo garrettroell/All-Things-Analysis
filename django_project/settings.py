@@ -43,9 +43,15 @@ ALLOWED_HOSTS = [
 # NEED TO UPDATE WITH EVERY NEW APP 
 
 INSTALLED_APPS = [
+    
+    # Added Apps
+
+    'polls.apps.PollsConfig',
     'users.apps.UsersConfig', # Don't forget the comma since this is a list
     'blog.apps.BlogConfig',
     'crispy_forms',
+
+    # Default apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

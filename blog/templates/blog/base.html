@@ -33,7 +33,8 @@
 	      </button>
 	      <div class="collapse navbar-collapse" id="navbarToggle">
 	        <div class="navbar-nav mr-auto">
-	          <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
+	          <a class="nav-item nav-link" href="{% url 'blog-home' %}">Blog</a>
+	          <a class="nav-item nav-link" href="{% url 'polls-index' %}">Polls</a>
 	          <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
 	        </div>
 	        <!-- Navbar Right Side -->
@@ -55,7 +56,7 @@
 
 <div class="container-fluid banner">
   <div class="row">
-    <img class='img-fluid w-100' src="{% static 'blog/rpi_title_2.jpg' %}" alt="" />
+    <img class='img-fluid w-100 h-auto' src="{% static 'blog/rpi_title_2.jpg' %}" alt="" />
   </div>
 </div>
 
