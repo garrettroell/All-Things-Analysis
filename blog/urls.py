@@ -18,7 +18,7 @@ urlpatterns = [
     path('about/', views.about, name='blog-about'),
     path('sports/', views.sports, name='blog-sports'),
     path('stocks/', views.stocks, name='blog-stocks'),
-    #path('podcast/', views.podcast, name='blog-podcast'),
+    path('podcast/', views.podcast, name='blog-podcast'),
     path('etc/', views.etc, name='blog-etc'),
 ]
  
