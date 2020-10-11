@@ -1,5 +1,5 @@
 # All-Things-Analysis
-Blog for Hot Takes
+A Static Blog Written in Python Django. This is an early version of the repository titled 'all-things-analyis-CMS-API'. This website was hosted for 3 months in 2020 on a raspberry pi running a variant of the open-source LAMP stack (Linux, Apache2, SQLite3, Python) from on my apartment's wifi. 
 
 # May 29, 2020 Desktop Screenshot
 <img src="May29 ATA pic.png" alt="Website Screenshot" width="907" height="540">
